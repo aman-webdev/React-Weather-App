@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+input,
+button,
+span {
+  font: inherit;
+}
+input,
+span {
+  display: block;
+}
+input {
+  max-width: 100%;
+}
+
+.no-location {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  .no-location {
+    padding: 3rem;
+
+    height: 50vh;
+    h1 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@import url("./components/Header/Header.scss");
+@import url("./components/Card/Card.scss");
+@import url("./components/Cards/cardsContainer.scss");
+@import url("./components/Graph/Graph.scss");
+@import url("./Pages/Home.scss");
+@import url("./Pages/HourWeather.scss");

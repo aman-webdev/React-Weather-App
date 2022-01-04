@@ -1,0 +1,27 @@
+.hour-weather {
+  .info {
+    width: 60%;
+    margin: auto;
+    padding: 0 2.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Open Sans", sans-serif;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+  select {
+    font-family: inherit;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    background: rgba(245, 245, 245, 0.9);
+
+    border-radius: 0.2rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}
